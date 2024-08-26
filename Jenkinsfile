@@ -4,7 +4,7 @@ pipeline {
         DOCKER_REGISTRY = 'harbor.ocp-prod.example.com'
         IMAGE_NAME = 'my-java-app'
         IMAGE_TAG = 'latest'
-        KUBE_CONTEXT = 'kubernetes-context-name'
+        KUBE_CONTEXT = '100-pipeline-jenkins/api-ocp-prod-example-com:6443/system:admin'
         HARBOR_CREDENTIALS_ID = 'harbor-credentials-id' // 使用你在 Jenkins 中创建的凭证 ID
         GIT_CREDENTIALS_ID = 'git-credentials-id' // 使用你在 Jenkins 中创建的 Git 凭证 ID
     }
